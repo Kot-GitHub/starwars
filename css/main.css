@@ -1,0 +1,192 @@
+@font-face {
+font-family: 'ProximaNova-Black';
+    src: local('ProximaNova-Black')
+            url('https://nomail.com.ua/files/eot/317d5480a545edf076e02aacd21f434f.eot?#iefix') format('embedded-opentype'),
+            url('https://nomail.com.ua/files/woff/317d5480a545edf076e02aacd21f434f.woff') format('woff'),
+            url('https://nomail.com.ua/files/woff2/317d5480a545edf076e02aacd21f434f.woff2') format('woff2');
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+body {
+  background: #070506 url("../img/main-bg.png") top right no-repeat;
+  background-attachment: fixed;
+
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+.container { 
+  margin: auto;
+  width: 90%;
+  max-width: 1060px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 91px;
+}
+.logo {
+  margin-right: 71px;
+}
+.nav__link {
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 15px;
+}
+.hero {
+  padding-top: 78px;
+}
+.hero__subtitle {
+  display: block;
+  font-family: Proxima Nova;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+.hero__title {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 78px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.hero__text {
+  width: 572px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #AFAFAF;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.hero__premier {
+  font-size: 18px;
+  line-height: 150%;
+  color: #B02000;
+  margin-bottom: 5px;
+}
+.hero__data {
+  display: block;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 46px;
+}
+.hero__button {
+  border: none;
+  background: linear-gradient(90deg, #FB641A 0%, #FC3309 100%);
+  border-radius: 300px;
+  color: #ffffff;
+  padding: 25px 35px;
+  padding-right: 80px;
+  text-decoration: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  text-decoration: none;
+}
+.hero__button::after {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #fff url("../img/play.svg") center no-repeat;
+  right: 0;
+  top: 0;
+}
+.hero__button::before {
+  content: "";
+  position: absolute;
+  width: 81px;
+  height: 81px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  right: -8px;
+  top: -8px;
+}
+.episodes {
+  padding: 50px 0;
+}
+.episodes__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+}
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slider__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 250px;
+  min-height: 200px;
+  background: linear-gradient(0deg, rgba(80, 80, 80, 0.86), rgba(80, 80, 80, 0.86));
+  box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+  transition: 0.2s;
+}
+.slider__item:hover {
+  background: linear-gradient(0deg, rgba(64, 101, 255, 0.86), rgba(64, 101, 255, 0.86)), url(dlpyYDt4F1MkVfUDGm1SjIkkbhy.jpg);
+  box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+}
+.slider__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.slider__title {
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 150%;
+}
+.slider__title-o {
+  margin-bottom: 12px;
+}
+.slider__rating-lable {
+  margin-right: 12px;
+}
+.star {
+  display: inline-block;
+  width : 12px;
+  height: 12px;
+  background: url("../img/star.svg") no-repeat center;
+}
+.star-o {
+  background: url("../img/star-o.svg");
+  display: inline-block;
+  width : 12px;
+  height: 12px;
+}
+.slider__nav--left {
+  width: 31px;
+  height: 31px;
+  border: none;
+  background: transparent url("../img/left-arrow.svg") no-repeat center;
+  margin-right: 15px;
+  cursor: pointer ;
+}
+.slider__nav--right {
+  width: 31px;
+  height: 31px;
+  border: none;
+  background: transparent url("../img/right-arrow.svg") no-repeat center;
+  cursor: pointer;
+}
+.slider__nav--left span, .slider__nav--right span {
+  display: none;
+}
